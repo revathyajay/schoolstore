@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+  <style>
+       body {
+       background-color:powderblue;
+       font-family:verdana;
+       font-size=160%;
+       text-align:center;
+       }
+       h1 {color:red;}
+    </style>
+</head>
+<body>
+<h1>login</h1>
+
+
+  <form action="{% url 'storeapp:login' %}" method="post">
+    {% csrf_token %}
+        <input type="text" name="username" placeholder="Enter Your Username"><br>
+        <input type="password" name="password" placeholder="Enter Your Password"><br>
+        <input type="submit"><br>
+      <a class="btn btn-success" href="{% url 'storeapp:register' %}">Register</a>
+    </form>
+{% for msg in messages %}
+<h4>{{msg}}</h4>
+{% endfor %}
+</body>
+</html>

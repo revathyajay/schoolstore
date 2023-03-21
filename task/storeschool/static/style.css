@@ -1,0 +1,13 @@
+body {
+       background-image: url("img/ReG.png");
+       background-repeat:no-repeat;
+       background-size:cover;
+
+
+
+       background-color: rgba(201, 76, 76, 0.3);
+       font-family:verdana;
+       font-size=160%;
+       text-align:left;
+       }
+       h1 {color:red;}
